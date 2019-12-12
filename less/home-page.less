@@ -1,7 +1,13 @@
 header {
+  border-bottom: 2px dashed @navigation-border;
+
   h2 {
     margin-top: 2rem;
   }
+  p {
+    margin-bottom: 1rem;
+  }
+  
 }//header
 
 
@@ -63,7 +69,13 @@ header {
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button-custom(@button-bg, @white);
+      }
     }
+
+
   }
 }// home
 

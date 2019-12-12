@@ -98,6 +98,11 @@ header {
 
       .btn {
         .button-custom(@button-bg, @white);
+
+        &:hover {
+          .animation-stats(button-animation, 1s);
+          .animation-content(button-animation, @button-bg, lighten(@button-bg, 40%));
+        }
       }
     }
 

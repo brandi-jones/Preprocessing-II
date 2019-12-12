@@ -10,3 +10,15 @@
     width: 85%;
     text-align: center;
 }
+
+.animation-stats(@name, @duration) {
+    animation-name: @name;
+    animation-duration: @duration;
+}
+
+.animation-content(@name, @color1, @color2) {
+    @keyframes @name {
+        from {background-color: @color1;}
+        to {background-color: @color2;}
+    }
+}

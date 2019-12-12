@@ -317,3 +317,15 @@ header p {
   width: 85%;
   text-align: center;
 }
+.home .content-pick .destination .btn:hover {
+  animation-name: button-animation;
+  animation-duration: 1s;
+}
+@keyframes button-animation {
+  from {
+    background-color: #17A2B8;
+  }
+  to {
+    background-color: #a7e9f4;
+  }
+}

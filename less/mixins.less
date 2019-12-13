@@ -1,1 +1,24 @@
 // Mixins in here
+
+.button-custom(@backgroundColor, @color) {
+    background-color: @backgroundColor;
+    color: @color;
+
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 85%;
+    text-align: center;
+}
+
+.animation-stats(@name, @duration) {
+    animation-name: @name;
+    animation-duration: @duration;
+}
+
+.animation-content(@name, @color1, @color2) {
+    @keyframes @name {
+        from {background-color: @color1;}
+        to {background-color: @color2;}
+    }
+}
